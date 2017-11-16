@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppForTest1.MenuPage"
+             Title="Menu"
+             Icon="hamburger">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <BoxView
+            BackgroundColor="#333"
+            HeightRequest="200"/>
+        <StackLayout
+            Orientation="Vertical"
+            VerticalOptions="End"
+            Padding="20"
+            Margin="10">
+
+            <Image
+            WidthRequest="100"
+            HeightRequest="100"
+            HorizontalOptions="Start"
+            BackgroundColor="AliceBlue"/>
+            <Label
+            Text="Saksit Jantaraplin"
+            TextColor="#fff"/>
+            <Label
+            Text="fb.co/chalorteam"
+            TextColor="#fff"/>
+
+        </StackLayout>
+        <BoxView
+            Grid.Row="1"
+            BackgroundColor="DarkTurquoise"/>
+        <ScrollView
+            Grid.Row="1">
+        <StackLayout
+            Orientation="Vertical"
+            Padding="20">
+                <Label
+                Text="VIEW"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+                <Button
+                Text="All View"
+                    x:Name="viewButton"/>
+
+            <BoxView
+                HeightRequest="1"
+                Margin="20"
+                BackgroundColor="#000"/>
+
+                <Label
+                Text="LAYOUT"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+                <Button
+                Text="Stack Layout"
+                    x:Name="stackButton"/>
+            <Button
+                Text="Grid Layout"
+                x:Name="gridButton"/>
+            <Button
+                Text="Absolute Layout"
+                x:Name="absoluteButton"/>
+
+            <BoxView
+                HeightRequest="1"
+                Margin="20"
+                BackgroundColor="#000"/>
+                <Label
+                Text="PAGE"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+                <Button
+                Text="Content Page"
+                    x:Name="contentButton"/>
+            <Button
+                Text="Navigation Page"
+                x:Name="navigationButton"/>
+            <Button
+                Text="Tabbed Page"
+                x:Name="tabbedButton"/>
+            <Button
+                Text="Carousel Page"
+                x:Name="carouselButton"/>
+
+
+
+
+        </StackLayout>
+        </ScrollView>
+
+
+
+    </Grid>
+</ContentPage>

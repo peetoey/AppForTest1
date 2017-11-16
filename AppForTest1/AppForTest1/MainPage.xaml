@@ -2,12 +2,77 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AppForTest1"
-             x:Class="AppForTest1.MainPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="AppForTest1.MainPage"
+             BackgroundColor="#000"
+             Padding="20">
+    <ScrollView>
+    <StackLayout
+        Orientation="Vertical"
+        BackgroundColor="Aqua">
+        
+        <Label
+            Text="Hello World! Hello World! Hello World! Hello World! Hello World!"
+            TextColor="#000"
+            BackgroundColor="Yellow"
+            HorizontalOptions="Fill"
+            VerticalOptions="Start"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            LineBreakMode="TailTruncation"
+            x:Name="firstNameLabel"/>
+        <Label
+            Text="Hello World! Hello World! Hello World! Hello World! Hello World!"
+            TextColor="#000"
+            BackgroundColor="Fuchsia"
+            HorizontalOptions="Fill"
+            VerticalOptions="Start"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            LineBreakMode="TailTruncation"
+            x:Name="lastNameLabel"/>
+        <Entry
+            Placeholder="who is your girl friend?"
+            IsEnabled="True"
+            IsPassword="False"
+            Keyboard="Default"
+            BackgroundColor="#A0333333"
+            x:Name="nameEntry"/>
+        <Button
+            TextColor="Blue"
+            Text="OK"
+            x:Name="okButton"/>
+        <DatePicker/>
+        <TimePicker/>
+        <Picker
+            Title="เลือกเพศ"
+            x:Name="genderPicker"/>
+        <Label
+            Text="0"
+            x:Name="valueLabel"/>
+        <Slider
+            x:Name="mySlider"
+            Maximum="100"
+            Minimum="0"
+            Value="50"/>
+        <Stepper
+            x:Name="myStepper"
+            Maximum="10"
+            Minimum="0"
+            Value="5"
+            Increment="1"/>
+        <Switch
+            HorizontalOptions="Start"
+            IsToggled="True"/>
+        <Image
+            Source="mario"/>
+        <WebView
+            Source="https://youtube.com"
+            HeightRequest="500"/>
+
+
+
+
+    </StackLayout>
+    </ScrollView>
+
 </ContentPage>
